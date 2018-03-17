@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="Ch14_Java/|Ch11_排序与查找/|Ch08_面向对象设计/|CtCILibrary/|Ch03_栈与队列/|Ch01_数组与字符串/Question1_4/|Ch01_数组与字符串/|Ch07_数学与概率/|Ch18_高难度题/|Ch04_树与图/|Ch01_数组与字符串/Question1_3/|Ch02_链表/|Ch09_递归与动态规划/|Ch17_中等难题/|Ch05_位操作/|Introduction/|Ch16_线程与锁/|Ch01_数组与字符串/Question1_1/|Ch10_扩展性与存储限制/" kind="src" path=""/>
+	<classpathentry excluding="Question1_4/|Question1_3/|Question1_1/" kind="src" path="Ch01_数组与字符串"/>
+	<classpathentry kind="src" path="Ch01_数组与字符串/Question1_1"/>
+	<classpathentry kind="src" path="Ch01_数组与字符串/Question1_3"/>
+	<classpathentry kind="src" path="Ch01_数组与字符串/Question1_4"/>
+	<classpathentry kind="src" path="Ch02_链表"/>
+	<classpathentry kind="src" path="Ch03_栈与队列"/>
+	<classpathentry kind="src" path="Ch04_树与图"/>
+	<classpathentry kind="src" path="Ch05_位操作"/>
+	<classpathentry kind="src" path="Ch07_数学与概率"/>
+	<classpathentry kind="src" path="Ch08_面向对象设计"/>
+	<classpathentry kind="src" path="Ch09_递归与动态规划"/>
+	<classpathentry kind="src" path="Ch10_扩展性与存储限制"/>
+	<classpathentry kind="src" path="Ch11_排序与查找"/>
+	<classpathentry kind="src" path="Ch14_Java"/>
+	<classpathentry kind="src" path="Ch16_线程与锁"/>
+	<classpathentry kind="src" path="Ch17_中等难题"/>
+	<classpathentry kind="src" path="Ch18_高难度题"/>
+	<classpathentry kind="src" path="CtCILibrary"/>
+	<classpathentry kind="src" path="Introduction"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="Ch01_数组与字符串/Question1_4"/>
+</classpath>

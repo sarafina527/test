@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Checksum
+comment0.text=\r\n\ An\ interface\ representing\ a\ data\ checksum.\r\n\r\n\ @author\ \ \ \ \ \ David\ Connelly\r\n
+comment1.params=b
+comment1.target=void\ update(int)
+comment1.text=\r\n\ Updates\ the\ current\ checksum\ with\ the\ specified\ byte.\r\n\r\n\ @param\ b\ the\ byte\ to\ update\ the\ checksum\ with\r\n
+comment2.params=b\ off\ len
+comment2.target=void\ update(byte[],\ int,\ int)
+comment2.text=\r\n\ Updates\ the\ current\ checksum\ with\ the\ specified\ array\ of\ bytes.\r\n\ @param\ b\ the\ byte\ array\ to\ update\ the\ checksum\ with\r\n\ @param\ off\ the\ start\ offset\ of\ the\ data\r\n\ @param\ len\ the\ number\ of\ bytes\ to\ use\ for\ the\ update\r\n
+comment3.params=
+comment3.target=long\ getValue()
+comment3.text=\r\n\ Returns\ the\ current\ checksum\ value.\r\n\ @return\ the\ current\ checksum\ value\r\n
+comment4.params=
+comment4.target=void\ reset()
+comment4.text=\r\n\ Resets\ the\ checksum\ to\ its\ initial\ value.\r\n
+numComments=5

@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=ZipError
+comment0.text=\r\n\ Signals\ that\ an\ unrecoverable\ error\ has\ occurred.\r\n\r\n\ @author\ \ Dave\ Bristor\r\n\ @since\ \ \ 1.6\r\n
+comment1.params=s
+comment1.target=ZipError(java.lang.String)
+comment1.text=\r\n\ Constructs\ a\ ZipError\ with\ the\ given\ detail\ message.\r\n\ @param\ s\ the\ {@code\ String}\ containing\ a\ detail\ message\r\n
+numComments=2

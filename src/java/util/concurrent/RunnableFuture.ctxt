@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=RunnableFuture
+comment0.text=\r\n\ A\ {@link\ Future}\ that\ is\ {@link\ Runnable}.\ Successful\ execution\ of\r\n\ the\ <tt>run</tt>\ method\ causes\ completion\ of\ the\ <tt>Future</tt>\r\n\ and\ allows\ access\ to\ its\ results.\r\n\ @see\ FutureTask\r\n\ @see\ Executor\r\n\ @since\ 1.6\r\n\ @author\ Doug\ Lea\r\n\ @param\ <V>\ The\ result\ type\ returned\ by\ this\ Future's\ <tt>get</tt>\ method\r\n
+comment1.params=
+comment1.target=void\ run()
+comment1.text=\r\n\ Sets\ this\ Future\ to\ the\ result\ of\ its\ computation\r\n\ unless\ it\ has\ been\ cancelled.\r\n
+numComments=2

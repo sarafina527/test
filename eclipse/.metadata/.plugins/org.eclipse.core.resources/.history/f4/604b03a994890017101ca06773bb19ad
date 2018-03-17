@@ -1,0 +1,78 @@
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        List<UnilateralLine> lineList = new ArrayList<UnilateralLine>();
+        while (scanner.hasNextLine()) {
+            String[] options = scanner.nextLine().split(";");
+            if (options.length < 5) {
+                break;
+            }
+            lineList.add(new UnilateralLine(options[0], options[1], options[2], options[3], options[4], options[5]));
+        }
+        scanner.close();
+        // wirte your code here
+        List<String> result = calculateUnilateral(lineList);
+
+        for (String str : result) {
+            System.out.println(str);
+        }
+    }
+    public static List<String> calculateUnilateral(List<UnilateralLine> lineList) {
+        List<String> result = new ArrayList<String>();
+        Map<String,List<UnilateralLine>> startEdge = new HashMap<String,List<UnilateralLine>>();
+        for(UnilateralLine edge:lineList){
+            String sc = edge.sCen;
+            if(startEdge.containsKey(sc)){
+                startEdge.get(sc).add(edge);
+            }else{
+                startEdge.put(sc,new LinkedList<UnilateralLine>());
+            }
+        }
+        for(String s:startEdge.keySet()){
+            String sb =  dfs(startEdge,s,null,s,0,"");
+            if(sb!=null&&!sb.equals("")){
+                result.add(sb.substring(1));
+            }
+        }
+       
+        return result;
+    }
+    public static String dfs(Map<String,List<UnilateralLine>> startEdge,String s,String tType,String start,int hop,String sb){
+        if(s.equals(start)&&hop>0){
+            return sb;
+        }
+        for(UnilateralLine edge:startEdge.get(s)){
+            String next = edge.eCen;
+            if((tType==null||tType.equals(edge.tType))&&hop<=2){
+                String res = dfs(startEdge,next,edge.tType,start,hop+1,sb+"+"+edge.id);
+                if(res!=null)
+                    return res;
+            }
+        }
+        return null;
+    }
+public static class UnilateralLine {
+    private String id;
+    private String sCen;
+    private String sPro;
+    private String eCen;
+    private String ePro;
+    //9.6m/17.5m
+    private String tType;
+    public UnilateralLine(String id, String sCen, String sPro, String eCen, String ePro,String tType) {
+                this.id = id;this.sCen = sCen;this.sPro = sPro;this.eCen = eCen;this.ePro = ePro;this.tType = tType;}
+    public String getId() {return id;}
+    public void setId(String id) {this.id = id;}
+    public String getSCen() {return sCen;}
+    public void setSCen(String ePro) {this.ePro = ePro;}
+    public String getSPro() {return sPro;}
+    public void setSPro(String sPro) {this.sPro = sPro;}
+    public String getECen() {return eCen;}
+    public void setECen(String eCen) {this.eCen = eCen;}
+    public String getEPro() {return ePro;}
+    public void setEPro(String ePro) {this.ePro = ePro;}
+    public String getTType() {return tType;}
+    public void setTType(String tType) {this.tType = tType;}
+}
+}

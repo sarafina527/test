@@ -1,0 +1,18 @@
+    public void diffPares(String sofar,int leftcnt,int n,List<String> pas){
+    	if(sofar.length()==2*n){
+    		pas.add(sofar);
+    		return;
+    	}
+    	if(leftcnt==n){
+    		int left = 2*n-leftcnt;
+    		StringBuilder sb = new StringBuilder(sofar);
+    		for(int i=0;i<left;i++)
+    			sb.appeng(')');
+    		pas.add(sb.toString());
+    		return;
+    	}
+    	int rightcnt = sofar.length()-leftcnt;
+    	diffPares(sofar+'(',leftcnt+1,n,pas);
+    	if(leftcnt>rightcnt)
+    		diffPares(sofar+')',leftcnt,n,pas);
+    }

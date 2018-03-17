@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=PreferencesFactory
+comment0.text=\r\n\ A\ factory\ object\ that\ generates\ Preferences\ objects.\ \ Providers\ of\r\n\ new\ {@link\ Preferences}\ implementations\ should\ provide\ corresponding\r\n\ <tt>PreferencesFactory</tt>\ implementations\ so\ that\ the\ new\r\n\ <tt>Preferences</tt>\ implementation\ can\ be\ installed\ in\ place\ of\ the\r\n\ platform-specific\ default\ implementation.\r\n\r\n\ <p><strong>This\ class\ is\ for\ <tt>Preferences</tt>\ implementers\ only.\r\n\ Normal\ users\ of\ the\ <tt>Preferences</tt>\ facility\ should\ have\ no\ need\ to\r\n\ consult\ this\ documentation.</strong>\r\n\r\n\ @author\ \ Josh\ Bloch\r\n\ @see\ \ \ \ \ Preferences\r\n\ @since\ \ \ 1.4\r\n
+comment1.params=
+comment1.target=Preferences\ systemRoot()
+comment1.text=\r\n\ Returns\ the\ system\ root\ preference\ node.\ \ (Multiple\ calls\ on\ this\r\n\ method\ will\ return\ the\ same\ object\ reference.)\r\n
+comment2.params=
+comment2.target=Preferences\ userRoot()
+comment2.text=\r\n\ Returns\ the\ user\ root\ preference\ node\ corresponding\ to\ the\ calling\r\n\ user.\ \ In\ a\ server,\ the\ returned\ value\ will\ typically\ depend\ on\r\n\ some\ implicit\ client-context.\r\n
+numComments=3

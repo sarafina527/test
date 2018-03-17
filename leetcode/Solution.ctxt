@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Solution
+comment1.params=maxChoosableInteger\ desiredTotal
+comment1.target=boolean\ canIWin(int,\ int)
+comment2.params=left\ myturn\ used
+comment2.target=boolean\ canIWin(int,\ boolean,\ boolean[])
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+numComments=4
